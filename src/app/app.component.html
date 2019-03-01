@@ -1,3 +1,21 @@
 <h1>Aula</h1>
 
 <p> Aula introdutória a respeito de angular</p>
+<p>Boa noite {{ nome }} </p>
+
+<form>
+    <input type="text" name="valor" [(ngModel)]="valor">
+    <button type="button" name="button" (click)="clique()">Clicar</button>
+</form>
+
+<br/>
+<br/>
+
+<form>
+    <input type="text" name="valor">
+    <input type="text" name="valor2">
+    <button type="button" name="button" (click)="somar(valor, valor2)">Somar</button>
+    <button type="button" name="button2" (click)="subtrair(valor, valor2)">Subtrair</button>
+    <buton type="button" name="button3" (click)="multiplicar(valor, valor2)">Multiplicar</button>
+    <button type="button" name="button4" (click)="dividir(valor, valor2)">Dividir</button>
+</form>
